@@ -1,0 +1,282 @@
+[
+    {
+      "id": 1,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.youtube.com/results?search_query=${queryParams[q].replace('!yt ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!yt*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 2,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.youtube.com/results?search_query=${queryParams[q].replace(/ !yt$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!yt",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 3,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.google.com/search?q=${queryParams[q].replace('!g ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!g*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 4,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.google.com/search?q=${queryParams[q].replace(/ !g$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!g",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 5,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://duckduckgo.com/?q=${queryParams[q].replace('!d ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!d*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 6,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://duckduckgo.com/?q=${queryParams[q].replace(/ !d$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!d",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 7,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://en.wikipedia.org/w/index.php?search=${queryParams[q].replace('!w ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!w*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 8,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://en.wikipedia.org/w/index.php?search=${queryParams[q].replace(/ !w$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!w",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 9,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.amazon.com/s?k=${queryParams[q].replace('!a ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!a*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 10,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.amazon.com/s?k=${queryParams[q].replace(/ !a$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!a",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 11,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.reddit.com/search/?q=${queryParams[q].replace('!r ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!r*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 12,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.reddit.com/search/?q=${queryParams[q].replace(/ !r$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!r",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 13,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://github.com/search?q=${queryParams[q].replace('!gh ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!gh*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 14,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://github.com/search?q=${queryParams[q].replace(/ !gh$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!gh",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 15,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://stackoverflow.com/search?q=${queryParams[q].replace('!so ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!so*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 16,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://stackoverflow.com/search?q=${queryParams[q].replace(/ !so$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!so",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 17,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.google.com/maps/search/${queryParams[q].replace('!m ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!m*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 18,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.google.com/maps/search/${queryParams[q].replace(/ !m$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!m",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 19,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.perplexity.ai/search?q=${queryParams[q].replace('!p ', '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=!p*",
+        "resourceTypes": ["main_frame"]
+      }
+    },
+    {
+      "id": 20,
+      "priority": 1,
+      "action": {
+        "type": "redirect",
+        "redirect": {
+          "url": "https://www.perplexity.ai/search?q=${queryParams[q].replace(/ !p$/, '')}"
+        }
+      },
+      "condition": {
+        "urlFilter": "https://www.google.com/search?*&q=*!p",
+        "resourceTypes": ["main_frame"]
+      }
+    }
+  ]

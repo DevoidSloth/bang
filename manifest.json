@@ -1,0 +1,22 @@
+{
+    "manifest_version": 3,
+    "name": "Bangs!",
+    "version": "1.1.8",
+    "description": "Use bang commands at the start or end of your Google searches for quick redirects to popular sites.",
+    "icons": {
+      "16": "screenshot.png",
+      "48": "screenshot.png",
+      "128": "screenshot.png"
+    },
+    "permissions": [
+      "declarativeNetRequest",
+      "declarativeNetRequestFeedback",
+      "webNavigation"
+    ],
+    "host_permissions": [
+      "*://www.google.com/*"
+    ],
+    "background": {
+      "service_worker": "background.js"
+    }
+  }
