@@ -22,7 +22,8 @@ const bangCommands = {
     '!wa': 'https://www.wolframalpha.com/input/?i=',
     '!dict': 'https://www.dictionary.com/browse/',
     '!th': 'https://www.thesaurus.com/browse/',
-    '!gs': 'https://scholar.google.com/scholar?q='
+    '!gs': 'https://scholar.google.com/scholar?q=',
+    '!c': 'https://claude.ai/chat'
   };
   
   function generateRules() {
