@@ -1,6 +1,6 @@
 # Bangs! Extension
 
-Bangs! is a Chrome extension that allows you to use bang commands at the start or end of your Google or DuckDuckGo searches for quick redirects to popular sites.
+Bangs! is a Chrome extension that allows you to use bang commands at the start or end of your Google searches for quick redirects to popular sites.
 
 ## Usage
 
@@ -23,11 +23,33 @@ Both will redirect to a YouTube search for "cute cats".
 - !so - Stack Overflow
 - !m - Google Maps
 - !p - Perplexity
+- !b - Bing
+- !i - Google Images
+- !n - Google News
+- !t - Twitter
+- !l - LinkedIn
+- !f - Facebook
+- !e - eBay
+- !imdb - IMDb
+- !s - Spotify
+- !tr - Google Translate
+- !wa - Wolfram Alpha
+- !dict - Dictionary.com
+- !th - Thesaurus.com
+- !gs - Google Scholar
+- !c - Claude AI
+- !gpt - ChatGPT
 
 ## Installation
 
-1. Download the extension from the Chrome Web Store
-2. Click on the extension icon to view usage instructions
+1. Download the extension from the Chrome Web Store (COMING SOON)
+2. Download the extension via `git clone https://github.com/devoidsloth/bangs-extension.git`
+3. Open Chrome and navigate to chrome://extensions
+4. 
+5. Enable "Developer mode" in the top right corner
+6. Click "Load unpacked."
+7. Select the folder where you downloaded the extension
+8. Click on the extension icon to view usage instructions
 
 ## Privacy
 
@@ -40,13 +62,10 @@ For support, please open an issue on our GitHub repository or contact us at supp
 ## License
 
 MIT License. See LICENSE file for details.
-*/
 
-// LICENSE
-/*
 MIT License
 
-Copyright (c) [year] [fullname]
+Copyright (c) 2023 Bangs! Extension
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
