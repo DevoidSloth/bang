@@ -42,7 +42,7 @@ Both will redirect to a YouTube search for "cute cats".
 
 ## Installation
 
-1. Download the extension from the Chrome Web Store (COMING SOON)
+1. --Download the extension from the Chrome Web Store (COMING SOON)--
 2. Download the extension via `git clone https://github.com/devoidsloth/bangs-extension.git`
 3. Open Chrome and navigate to chrome://extensions
 4. 
