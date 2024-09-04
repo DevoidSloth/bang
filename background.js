@@ -23,7 +23,8 @@ const bangCommands = {
     '!dict': 'https://www.dictionary.com/browse/',
     '!th': 'https://www.thesaurus.com/browse/',
     '!gs': 'https://scholar.google.com/scholar?q=',
-    '!c': 'https://claude.ai/chat'
+    '!c': 'https://claude.ai/new?q=',
+    '!gpt': 'https://chatgpt.com/?q=',
   };
   
   function generateRules() {
